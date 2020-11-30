@@ -48,7 +48,7 @@ empRoutes.route('/').get(function(req, res) {
 
 empRoutes.route('/:id').get(function(req, res) {
     let id = req.params.id;
-    Todo.findById(id, function(err, employee) {
+    Employee.findById(id, function(err, employee) {
         res.json(employee);
     })
 })
